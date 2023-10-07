@@ -74,8 +74,7 @@ int main()
 
 /*求最大公约数*/
 #include<stdio.h>
-int main()
-{
+int main(){
     int a,b;
     int t;
     scanf("%d  %d",&a,&b);
@@ -83,7 +82,6 @@ int main()
         t=a%b;//储存余数
         a=b;
         b=t;
-
     }
     printf("gcd=%d\n",a);
     return 0;

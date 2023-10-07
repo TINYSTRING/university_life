@@ -4,13 +4,15 @@ int main()
     int a[1000];
     int n, m;
     int i;
-    int sum = 0;
-    int count = 0;
-      scanf("%d%d",&n,&m);
-        for (i = 0; i < n; i++)
+    while (scanf("%d%d", &n, &m) == 2 && n != 0 && m != 0)
     {
-        a[i] = i + 1;
-    }
+        int sum = 0;//用于踢人
+        int count = 0;//用于记录踢出的人数
+        
+        for (i = 0; i < n; i++)
+        {
+            a[i] = i + 1;
+        }
         for (i = 0; count < n - 1;)
         {
             if (a[i] != 0)
@@ -24,19 +26,19 @@ int main()
                 count++;
             }
             i++;
-            if (i == n)
+            if (i == n)//如果i=1开始，此处变为n+1;
             {
                 i = 0;
             }
         }
         for (i = 0; i < n; i++)
-    {
-        if (a[i] != 0)
         {
-            printf("%d\n", a[i]);
+            if (a[i] != 0)
+            {
+                printf("%d\n", a[i]);
+            }
         }
     }
-    
     return 0;
 }*/
 /*以上为计数器解法*/
