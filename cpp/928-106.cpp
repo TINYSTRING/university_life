@@ -489,7 +489,7 @@ int main()
         prefix[i]+=prefix[i-1];
         prefix[i]%=7;//prefix[i]是当位置为i时 前缀和%7的余数
     }
-    for(int i=n;i>=1;i--){  
+    for(int i=n;i>=1;i--){
         f[prefix[i]]=i;//倒着扫一遍 不断更新最后就是这个余数第一次出现;
     }
     f[0]=0;//从1加到i是7的倍数的情况下，需要把0的第一次出现设为0，即把整个区间[1,i]加上了
