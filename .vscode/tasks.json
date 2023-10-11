@@ -1,9 +1,6 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "compile",
-            "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -12,16 +9,19 @@
                 "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
                 //"${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
+            "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            },
+            "label": "compile",
             "options": {
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "type": "cppbuild"
         }
     ],
     "version": "2.0.0"

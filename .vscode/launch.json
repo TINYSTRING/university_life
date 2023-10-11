@@ -1,20 +1,20 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
-            "name": "TinyString",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+            "MIMode": "gdb",
             //"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
-            "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
             "miDebuggerPath": "C:\\Program Files\\mingw64\\bin\\gdb.exe",
-            "preLaunchTask": "compile"
+            "name": "TinyString",
+            "preLaunchTask": "compile",
+            "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+            "request": "launch",
+            "stopAtEntry": false,
+            "type": "cppdbg"
         }
-    ]
+    ],
+    "version": "0.2.0"
 }

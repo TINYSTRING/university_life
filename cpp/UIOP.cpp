@@ -32,7 +32,7 @@ const int maxn = 100005;
 int a[maxn], b[maxn], map[maxn], f[maxn];
 //f[i]是指i长度时的末尾元素
 //map将原数组离散化
-int main(void)
+/*int main(void)
 {
     int n,m;
     scanf("%d", &n);
@@ -80,5 +80,13 @@ int main(void)
         }
     }
     printf("%d", len);
+    return 0;
+}
+*/
+#include <stdio.h>
+
+int main(void) {
+    scanf("%d", )
+
     return 0;
 }
