@@ -7,7 +7,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "miDebuggerPath": "C:\\Program Files\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
             "name": "TinyString",
             "preLaunchTask": "compile",
             "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",

@@ -9,7 +9,7 @@
                 "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
                 //"${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
-            "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+            "command": "g++.exe",
             "group": {
                 "isDefault": true,
                 "kind": "build"
