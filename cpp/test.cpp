@@ -59,5 +59,3 @@ int main(void)
  return 0;
 }*/
 /*以上为求平均年龄*/
-
-

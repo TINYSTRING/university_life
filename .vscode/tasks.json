@@ -2,26 +2,29 @@
     "tasks": [
         {
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
-                //"${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
-            "command": "g++.exe",
-            "group": {
-                "isDefault": true,
-                "kind": "build"
-            },
+            "command": "g++",
+            "group": "build",
             "label": "compile",
             "options": {
                 "cwd": "${fileDirname}"
             },
+            "presentation": {
+                "clear": false,
+                "echo": true,
+                "focus": false,
+                "panel": "shared",
+                "reveal": "always",
+                "showReuseMessage": true
+            },
             "problemMatcher": [
                 "$gcc"
             ],
-            "type": "cppbuild"
+            "type": "shell"
         }
     ],
     "version": "2.0.0"

@@ -2,17 +2,17 @@
     "configurations": [
         {
             "MIMode": "gdb",
-            //"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
-            "name": "TinyString",
+            "miDebuggerPath": "D:/mingw64/bin/gdb.exe",
+            "name": "(gdb) Launch",
             "preLaunchTask": "compile",
-            "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "request": "launch",
             "stopAtEntry": false,
+            "targetArchitecture": "x86",
             "type": "cppdbg"
         }
     ],
